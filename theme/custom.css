@@ -1,3 +1,10 @@
+html, body{
+    background-color: #f5f5f5;
+}
+#phpbb > .container {
+    padding: 30px;
+    background-color: white;
+}
 table {
     background-color: #fff;
 }
@@ -179,3 +186,7 @@ h3.heading {
     border-radius: 0 !important;
 }
 /* END Заостренные углы у кнопок */
+a,
+a:hover {
+    text-decoration: none;
+}
