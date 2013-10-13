@@ -1,0 +1,117 @@
+table {
+    background-color: #fff;
+}
+thead, .heading {
+    background-color: #2c2c2c;
+    background-image: -moz-linear-gradient(top, #333, #222);
+    background-image: -ms-linear-gradient(top, #333, #222);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333), to(#222));
+    background-image: -webkit-linear-gradient(top, #333, #222);
+    background-image: -o-linear-gradient(top, #333, #222);
+    background-image: linear-gradient(top, #333, #222);
+    background-repeat: repeat-x;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+
+    color: #999;
+}
+h3.heading {
+    color: #999;
+    font-size: 13px;
+    padding: 3px 8px;
+    font-weight: normal;
+}
+.heading > a {
+    color: #999;
+}
+.box {
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+.box > p {
+
+    padding: 8px;
+}
+.danger-color {
+    color: #b94a48;
+    background-color: #f2dede !important;
+    border-color: #eed3d7;
+}
+.success-color {
+    color: #468847;
+    background-color: #dff0d8 !important;
+    border-color: #d6e9c6;
+}
+.info-color {
+    color: #3a87ad;
+    background-color: #d9edf7 !important;
+    border-color: #bce8f1;
+}
+.warning-color {
+    color: #c09853;
+    background-color: #fcf8e3 !important;
+    border-color: #fbeed5;
+}
+.no-margin {
+    margin: 0;
+}
+.box-heading {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #2c2c2c;
+    background-image: -moz-linear-gradient(top, #333, #222);
+    background-image: -ms-linear-gradient(top, #333, #222);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333), to(#222));
+    background-image: -webkit-linear-gradient(top, #333, #222);
+    background-image: -o-linear-gradient(top, #333, #222);
+    background-image: linear-gradient(top, #333, #222);
+    background-repeat: repeat-x;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+
+    color: #999;
+    /*text-align: center;*/
+    padding: 1px;
+    margin: -20px -20px 20px -20px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.pcon {
+    float: left;
+    width: 27px;
+    height: 27px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.c-menu {
+    margin-left: 0;
+    margin-right: -19%;
+}
+
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+.navbar-fixed-top .brand {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 20px;
+    float: left;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.navbar-fixed-top .brand:hover {
+    text-decoration: none;
+}
