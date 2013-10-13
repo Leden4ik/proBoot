@@ -5,11 +5,11 @@ phpBB3 theme based on [Bootstrap](http://twitter.github.com/bootstrap/) framewor
 
 **Base style:** proSilver
 
-**Style Version:** 2.0
+**Style Version:** 2.0 Modification
 
-**phpBB version:** phpBB 3.0.11
+**phpBB version:** phpBB 3.0.x
 
-**Demo:** [http://cegtechforum.com/forum/](http://cegtechforum.com/forum/)
+**Demo:** [http://pbv2.leden4ik.name/](http://pbv2.leden4ik.name/)
 
 **Download:** [http://shibulijack.github.com/proBoot/](http://shibulijack.github.com/proBoot/)
 
