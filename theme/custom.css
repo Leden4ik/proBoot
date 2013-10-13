@@ -166,3 +166,16 @@ h3.heading {
 .navbar-fixed-top .brand:hover {
     text-decoration: none;
 }
+/* Заостренные углы у кнопок */
+.btn,
+.btn-primary,
+.btn-warning,
+.btn-danger,
+.btn-success,
+.btn-info,
+.btn-inverse{
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+/* END Заостренные углы у кнопок */
