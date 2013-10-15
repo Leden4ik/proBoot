@@ -11,6 +11,4 @@ phpBB3 theme based on [Bootstrap](http://twitter.github.com/bootstrap/) framewor
 
 **Demo:** [http://pbv2.leden4ik.name](http://pbv2.leden4ik.name)
 
-**Download:** [http://shibulijack.github.com/proBoot](http://shibulijack.github.com/proBoot)
-
-**Blog post:** [http://shibulijack.wordpress.com/2012/12/06/proboot-bootstrap-theme-for-phpbb3](http://shibulijack.wordpress.com/2012/12/06/proboot-bootstrap-theme-for-phpbb3)
+**Download:** [https://github.com/Leden4ik/proBoot/](https://github.com/Leden4ik/proBoot/archive/master.zip)
