@@ -7,7 +7,6 @@
 	Customised by:		Shibu Lijack
     --------------------------------------------------------------
 */
-
 @import url("common.css");
 @import url("links.css");
 @import url("content.css");
@@ -19,4 +18,6 @@
 @import url("imageset.css");
 @import url("bootstrap.css");
 @import url("bootstrap-responsive.css");
+@import url("font-awesome.css");
+@import url("font-awesome-ie7.css");
 @import url("custom.css");
