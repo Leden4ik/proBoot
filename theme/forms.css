@@ -151,12 +151,7 @@ fieldset.quick-login {
 	margin: 5px;
 }
 
-fieldset.quick-login input {
-	width: auto;
-}
-
 fieldset.quick-login input.inputbox {
-	width: 15%;
 	vertical-align: middle;
 	margin-right: 5px;
 	background-color: #f3f3f3;
@@ -268,24 +263,7 @@ fieldset.submit-buttons input {
 
 /* Input field styles
 ---------------------------------------- */
-.inputbox {
-	background-color: #FFFFFF;
-	border: 1px solid #c0c0c0;
-	color: #333333;
-	padding: 2px;
-	cursor: text;
-}
-
-.inputbox:hover {
-	border: 1px solid #eaeaea;
-}
-
-.inputbox:focus {
-	border: 1px solid #eaeaea;
-	color: #4b4b4b;
-}
-
-input.inputbox	{ width: 85%; }
+input.inputbox	{ width: 80%; }
 input.medium	{ width: 50%; }
 input.narrow	{ width: 25%; }
 input.tiny		{ width: 125px; }
