@@ -175,6 +175,11 @@ h3.heading {
 .navbar-fixed-top .brand:hover {
     text-decoration: none;
 }
+.well {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
 /* Заостренные углы у кнопок */
 .btn,
 .btn-primary,
