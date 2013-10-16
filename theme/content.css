@@ -90,7 +90,6 @@ li.header dt, li.header dd {
 	padding-top: 2px;
 	padding-bottom: 2px;
 	font-size: 1em;
-	font-family: Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -242,7 +241,6 @@ div[class].topic-actions {
 	margin: 0 0 0.3em 0 !important;
 	text-transform: none;
 	border: none;
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 	line-height: 125%;
 }
 
@@ -328,7 +326,6 @@ div[class].topic-actions {
 p.author {
 	margin: 0 15em 0.6em 0;
 	padding: 0 0 5px 0;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
 
 }
 
@@ -362,7 +359,6 @@ dd .signature {
 
 /* Post noticies */
 .notice {
-	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
 	width: auto;
 	margin-top: 1.5em;
 	padding-top: 0.2em;
@@ -479,7 +475,6 @@ dl.codebox code {
 }
 
 .attachbox dt {
-	font-family: Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -533,7 +528,6 @@ div.inline-attachment p {
 }
 
 dl.file {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 	display: block;
 }
 
@@ -542,7 +536,6 @@ dl.file dt {
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 dl.file dd {
@@ -560,7 +553,6 @@ dl.thumbnail img {
 dl.thumbnail dd {
 	color: #666666;
 	font-style: italic;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .attachbox dl.thumbnail dd {
@@ -578,7 +570,6 @@ dl.thumbnail dt a:hover img {
 /* Post poll styles
 ----------------------------------------*/
 fieldset.polls {
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 }
 
 fieldset.polls dl {
@@ -624,7 +615,6 @@ fieldset.polls dd input {
 
 fieldset.polls dd div {
 	text-align: right;
-	font-family: Arial, Helvetica, sans-serif;
 	color: #FFFFFF;
 	font-weight: bold;
 	min-width: 2%;
