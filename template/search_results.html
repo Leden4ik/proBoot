@@ -97,20 +97,20 @@
 			{searchresults.L_IGNORE_POST}
 		</div>
 	<!-- ELSE -->
-		<div class="postbody">
+			<dl class="postprofile span3">
+				<dt class="author">{L_POST_BY_AUTHOR} {searchresults.POST_AUTHOR_FULL}</dt>
+				<dd>{searchresults.POST_DATE}</dd>
+				<dd>&nbsp;</dd>
+				<dd>{L_FORUM}: <a href="{searchresults.U_VIEW_FORUM}">{searchresults.FORUM_TITLE}</a></dd>
+				<dd>{L_TOPIC}: <a href="{searchresults.U_VIEW_TOPIC}">{searchresults.TOPIC_TITLE}</a></dd>
+				<dd>{L_REPLIES}: <strong>{searchresults.TOPIC_REPLIES}</strong></dd>
+				<dd>{L_VIEWS}: <strong>{searchresults.TOPIC_VIEWS}</strong></dd>
+			</dl>
+
+		<div class="postbody span9">
 			<h3><a href="{searchresults.U_VIEW_POST}">{searchresults.POST_SUBJECT}</a></h3>
 			<div class="content">{searchresults.MESSAGE}</div>
 		</div>
-
-		<dl class="postprofile">
-			<dt class="author">{L_POST_BY_AUTHOR} {searchresults.POST_AUTHOR_FULL}</dt>
-			<dd>{searchresults.POST_DATE}</dd>
-			<dd>&nbsp;</dd>
-			<dd>{L_FORUM}: <a href="{searchresults.U_VIEW_FORUM}">{searchresults.FORUM_TITLE}</a></dd>
-			<dd>{L_TOPIC}: <a href="{searchresults.U_VIEW_TOPIC}">{searchresults.TOPIC_TITLE}</a></dd>
-			<dd>{L_REPLIES}: <strong>{searchresults.TOPIC_REPLIES}</strong></dd>
-			<dd>{L_VIEWS}: <strong>{searchresults.TOPIC_VIEWS}</strong></dd>
-		</dl>
 	<!-- ENDIF -->
 
 	<!-- IF not searchresults.S_IGNORE_POST -->
