@@ -4,21 +4,7 @@ Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
 html, body {
-	color: #536482;
-	background-color: #FFFFFF;
-}
-
-h1 {
-	color: #FFFFFF;
-}
-
-h2 {
-	color: #28313F;
-}
-
-h3 {
-	
-	color: #115098;
+    background-image: url("./images/background.png");
 }
 
 hr {
