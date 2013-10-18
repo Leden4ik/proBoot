@@ -1,73 +1,6 @@
 /* General Markup Styles
 ---------------------------------------- */
 
-* {
-	/* Reset browsers default margin, padding and font sizes */
-	margin: 0;
-	padding: 0;
-}
-
-html {
-	font-size: 100%;
-	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
-	height: 101%;
-}
-
-body {
-	/* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
-	color: #828282;
-	background-color: #FFFFFF;
-	/*font-size: 62.5%;			 This sets the default font size to be equivalent to 10px */
-	font-size: 10px;
-	margin: 0;
-	padding: 12px 0;
-}
-
-h1 {
-	/* Forum name */
-	margin-right: 200px;
-	color: #FFFFFF;
-	margin-top: 15px;
-	font-weight: bold;
-	font-size: 2em;
-}
-
-h2 {
-	/* Forum header titles */
-	font-weight: normal;
-	color: #3f3f3f;
-	font-size: 2em;
-	margin: 0.8em 0 0.2em 0;
-}
-
-
-h3 {
-	/* Sub-headers (also used as post headers, but defined later) */
-	font-weight: bold;
-	text-transform: uppercase;
-	
-	margin-bottom: 3px;
-	padding-bottom: 2px;
-	font-size: 1.05em;
-	color: #989898;
-	margin-top: 20px;
-}
-
-h4 {
-	/* Forum and topic list titles */
-	font-size: 1.3em;
-}
-
-/*p {
-	line-height: 1.3em;
-	font-size: 1.1em;
-	margin-bottom: 1.5em;
-}*/
-
-img {
-	border-width: 0;
-}
-
 hr {
 	/* Also see tweaks.css */
 	border: 0 none #FFFFFF;
@@ -180,15 +113,15 @@ a#logo:hover {
 	}
 
 .forabg {
-	
+
 	margin-top: 10px;
 	margin-bottom: 4px;
-	
+
 	clear: both;
 }
 
 .forumbg {
-	
+
 	margin-bottom: 4px;
 		clear: both;
 }
