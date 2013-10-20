@@ -65,12 +65,12 @@
 	<div class="span4">	
 		<form action="{S_SEARCHBOX_ACTION}" method="get" id="forum-search" class="form-search pull-right" style="margin:0;">
 				
-				<fieldset>
-				
-					<input class="input-medium search" type="text" name="keywords" id="search_keywords" size="20" value="{L_SEARCH_FORUM}" onclick="if (this.value == '{LA_SEARCH_FORUM}') this.value = '';" onblur="if (this.value == '') this.value = '{LA_SEARCH_FORUM}';" />
-				<button type="submit" class="btn">{L_SEARCH}</button>
-				{S_SEARCH_LOCAL_HIDDEN_FIELDS}
-
+				<fieldset class="form-search form-inline">
+					<div class="input-append">
+						<input class="input-medium search" type="text" name="keywords" id="search_keywords" size="20" value="{L_SEARCH_FORUM}" onclick="if (this.value == '{LA_SEARCH_FORUM}') this.value = '';" onblur="if (this.value == '') this.value = '{LA_SEARCH_FORUM}';" />
+						<button type="submit" class="btn">{L_SEARCH}</button>
+						{S_SEARCH_LOCAL_HIDDEN_FIELDS}
+					</div>
 				</fieldset>
 				</form>
 	</div>
@@ -238,12 +238,13 @@
 <!-- IF S_DISPLAY_SEARCHBOX -->
 	<div class="span4">	
 		<form action="{S_SEARCHBOX_ACTION}" method="get" id="forum-search" class="form-search pull-right" style="margin:0;">
-				
-				<fieldset>
-				
+
+				<fieldset class="form-search form-inline">
+					<div class="input-append">
 					<input class="input-medium search" type="text" name="keywords" id="search_keywords" size="20" value="{L_SEARCH_FORUM}" onclick="if (this.value == '{LA_SEARCH_FORUM}') this.value = '';" onblur="if (this.value == '') this.value = '{LA_SEARCH_FORUM}';" />
 				<button type="submit" class="btn">{L_SEARCH}</button>
 				{S_SEARCH_LOCAL_HIDDEN_FIELDS}
+					</div>
 
 				</fieldset>
 				</form>

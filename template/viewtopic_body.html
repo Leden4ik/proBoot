@@ -38,10 +38,12 @@
 	<!-- IF S_DISPLAY_SEARCHBOX -->
 		<div class="span4">
 			<form method="get" id="topic-search" action="{S_SEARCHBOX_ACTION}" class="form-search pull-right" style="margin:0;">
-			<fieldset>
-				<input class="input-medium"  type="text" name="keywords" id="search_keywords" size="20" value="{L_SEARCH_TOPIC}" onclick="if(this.value=='{LA_SEARCH_TOPIC}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_TOPIC}';" />
-				<input class="btn" type="submit" value="{L_SEARCH}" />
-				{S_SEARCH_LOCAL_HIDDEN_FIELDS}
+			<fieldset class="form-search form-inline">
+				<div class="input-append">
+					<input class="input-medium"  type="text" name="keywords" id="search_keywords" size="20" value="{L_SEARCH_TOPIC}" onclick="if(this.value=='{LA_SEARCH_TOPIC}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_TOPIC}';" />
+					<input class="btn" type="submit" value="{L_SEARCH}" />
+					{S_SEARCH_LOCAL_HIDDEN_FIELDS}
+				</div>
 			</fieldset>
 			</form>
 		</div>
@@ -286,10 +288,12 @@
 	<!-- IF S_DISPLAY_SEARCHBOX -->
 		<div class="span4">
 			<form method="get" id="topic-search" action="{S_SEARCHBOX_ACTION}" class="form-search pull-right" style="margin:0;">
-			<fieldset>
-				<input class="input-medium"  type="text" name="keywords" id="search_keywords" size="20" value="{L_SEARCH_TOPIC}" onclick="if(this.value=='{LA_SEARCH_TOPIC}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_TOPIC}';" />
-				<input class="btn" type="submit" value="{L_SEARCH}" />
-				{S_SEARCH_LOCAL_HIDDEN_FIELDS}
+			<fieldset class="form-search form-inline">
+				<div class="input-append">
+					<input class="input-medium" type="text" name="keywords" id="search_keywords" size="20" value="{L_SEARCH_TOPIC}" onclick="if(this.value=='{LA_SEARCH_TOPIC}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_TOPIC}';" />
+					<input class="btn" type="submit" value="{L_SEARCH}" />
+					{S_SEARCH_LOCAL_HIDDEN_FIELDS}
+				</div>
 			</fieldset>
 			</form>
 		</div>
