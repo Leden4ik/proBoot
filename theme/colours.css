@@ -7,11 +7,6 @@ html, body {
     background-image: url("./images/background.png");
 }
 
-hr {
-	border-color: #FFFFFF;
-	border-top-color: #CCCCCC;
-}
-
 hr.dashed {
 	border-top-color: #CCCCCC;
 }

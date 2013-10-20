@@ -1,16 +1,6 @@
 /* General Markup Styles
 ---------------------------------------- */
 
-hr {
-	/* Also see tweaks.css */
-	border: 0 none #FFFFFF;
-	border-top: 1px solid #CCCCCC;
-	height: 1px;
-	margin: 5px 0;
-	display: block;
-	clear: both;
-}
-
 hr.dashed {
 	border-top: 1px dashed #CCCCCC;
 	margin: 10px 0;
