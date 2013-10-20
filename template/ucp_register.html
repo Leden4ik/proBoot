@@ -25,42 +25,95 @@
 
 	<h3 class="box-heading">{SITENAME} - {L_REGISTRATION}</h3>
 
-	<fieldset class="fields2">
-	<!-- IF ERROR --><dl><dd class="error">{ERROR}</dd></dl><!-- ENDIF -->
+	<fieldset class="form-horizontal">
+	<!-- IF ERROR --><div class="alert alert-block alert-error">{ERROR}</div><!-- ENDIF -->
 	<!-- IF L_REG_COND -->
 		<dl><dd><strong>{L_REG_COND}</strong></dd></dl>
 	<!-- ENDIF -->
-	<dl>
-		<dt><label for="username">{L_USERNAME}:</label><br /><span>{L_USERNAME_EXPLAIN}</span></dt>
-		<dd><input type="text" tabindex="1" name="username" id="username" size="25" value="{USERNAME}" class="inputbox autowidth" title="{L_USERNAME}" /></dd>
-	</dl>
-  	<dl>
-    		<dt><label for="email">{L_EMAIL_ADDRESS}:</label></dt>
-      		<dd><input type="text" tabindex="2" name="email" id="email" size="25" maxlength="100" value="{EMAIL}" class="inputbox autowidth" title="{L_EMAIL_ADDRESS}" /></dd>
-  	</dl>
-  	<dl>
-      <dt><label for="email_confirm">{L_CONFIRM_EMAIL}:</label></dt>
-      <dd><input type="text" tabindex="3" name="email_confirm" id="email_confirm" size="25" maxlength="100" value="{EMAIL_CONFIRM}" class="inputbox autowidth" title="{L_CONFIRM_EMAIL}" /></dd>
-   </dl>
-	<dl>
-		<dt><label for="new_password">{L_PASSWORD}:</label><br /><span>{L_PASSWORD_EXPLAIN}</span></dt>
-		<dd><input type="password" tabindex="4" name="new_password" id="new_password" size="25" value="{PASSWORD}" class="inputbox autowidth" title="{L_NEW_PASSWORD}" /></dd>
-	</dl>
-	<dl>
-		<dt><label for="password_confirm">{L_CONFIRM_PASSWORD}:</label></dt>
-		<dd><input type="password" tabindex="5" name="password_confirm" id="password_confirm" size="25" value="{PASSWORD_CONFIRM}" class="inputbox autowidth" title="{L_CONFIRM_PASSWORD}" /></dd>
-	</dl>
+	<div class="span6">
+		<div class="control-group">
+			<label class="control-label" for="username">{L_USERNAME}:</label>
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on">
+						<i class="icon-user"></i>
+					</span>
+					<input type="text" tabindex="1" name="username" id="username" size="25" value="{USERNAME}" class="input-large" title="{L_USERNAME}" />
+				</div>
+				<span class="help-block">{L_USERNAME_EXPLAIN}</span>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="email">{L_EMAIL_ADDRESS}:</label>
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on">
+						<i class="icon-envelope"></i>
+					</span>
+					<input type="text" tabindex="2" name="email" id="email" size="25" maxlength="100" value="{EMAIL}" class="input-large" title="{L_EMAIL_ADDRESS}" />
+				</div>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="email_confirm">{L_CONFIRM_EMAIL}:</label>
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on">
+						<i class="icon-envelope"></i>
+					</span>
+					<input type="text" tabindex="3" name="email_confirm" id="email_confirm" size="25" maxlength="100" value="{EMAIL_CONFIRM}" class="input-large" title="{L_CONFIRM_EMAIL}" />
+				</div>
+			</div>
+	   </div>
+		<div class="control-group">
+			<label class="control-label" for="new_password">{L_PASSWORD}:</label>
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on">
+						<i class="icon-key"></i>
+					</span>
+					<input type="password" tabindex="4" name="new_password" id="new_password" size="25" value="{PASSWORD}" class="input-large" title="{L_NEW_PASSWORD}" />
+				</div>
+				<span class="help-block">{L_PASSWORD_EXPLAIN}</span>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="password_confirm">{L_CONFIRM_PASSWORD}:</label>
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on">
+						<i class="icon-key"></i>
+					</span>
+					<input type="password" tabindex="5" name="password_confirm" id="password_confirm" size="25" value="{PASSWORD_CONFIRM}" class="input-large" title="{L_CONFIRM_PASSWORD}" />
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<hr />
-
-	<dl>
-		<dt><label for="lang">{L_LANGUAGE}:</label></dt>
-		<dd><select name="lang" id="lang" onchange="change_language(this.value); return false;" tabindex="6" title="{L_LANGUAGE}">{S_LANG_OPTIONS}</select></dd>
-	</dl>
-	<dl>
-		<dt><label for="tz">{L_TIMEZONE}:</label></dt>
-		<dd><select name="tz" id="tz" tabindex="7" class="autowidth">{S_TZ_OPTIONS}</select></dd>
-	</dl>
+	<div class="span6">
+		<div class="control-group">
+			<label class="control-label" for="lang">{L_LANGUAGE}:</label>
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on">
+						<i class="icon-flag"></i>
+					</span>
+					<select name="lang" id="lang" onchange="change_language(this.value); return false;" tabindex="6" title="{L_LANGUAGE}" class="input-xlarge">{S_LANG_OPTIONS}</select>
+				</div>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="tz">{L_TIMEZONE}:</label>
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on">
+						<i class="icon-time"></i>
+					</span>
+					<select name="tz" id="tz" tabindex="7" class="input-xlarge">{S_TZ_OPTIONS}</select>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- IF .profile_fields -->
 		<dl><dd><strong>{L_ITEMS_REQUIRED}</strong></dd></dl>
