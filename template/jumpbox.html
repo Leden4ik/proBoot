@@ -35,16 +35,20 @@
 	<!-- IF $CUSTOM_FIELDSET_CLASS -->
 		<fieldset class="{$CUSTOM_FIELDSET_CLASS}">
 	<!-- ELSE -->
-		<fieldset class="jumpbox">
+		<fieldset class="jumpbox form-horizontal">
 	<!-- ENDIF -->
-			<label for="f" accesskey="j"><!-- IF S_IN_MCP and S_MERGE_SELECT -->{L_SELECT_TOPICS_FROM}<!-- ELSEIF S_IN_MCP -->{L_MODERATE_FORUM}<!-- ELSE -->{L_JUMP_TO}<!-- ENDIF -->:</label>
-			<select style="margin:0;" name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
-			<!-- BEGIN jumpbox_forums -->
-				<!-- IF jumpbox_forums.S_FORUM_COUNT == 1 --><option value="-1">------------------</option><!-- ENDIF -->
-				<option value="{jumpbox_forums.FORUM_ID}"{jumpbox_forums.SELECTED}><!-- BEGIN level -->&nbsp; &nbsp;<!-- END level -->{jumpbox_forums.FORUM_NAME}</option>
-			<!-- END jumpbox_forums -->
-			</select>
-			<input class="btn" type="submit" value="{L_GO}" />
+			<div class="input-append">
+				<label for="f" accesskey="j" class="control-label"><!-- IF S_IN_MCP and S_MERGE_SELECT -->{L_SELECT_TOPICS_FROM}<!-- ELSEIF S_IN_MCP -->{L_MODERATE_FORUM}<!-- ELSE -->{L_JUMP_TO}<!-- ENDIF -->:</label>
+				<div class="controls">
+					<select style="margin:0;" name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+					<!-- BEGIN jumpbox_forums -->
+						<!-- IF jumpbox_forums.S_FORUM_COUNT == 1 --><option value="-1">------------------</option><!-- ENDIF -->
+						<option value="{jumpbox_forums.FORUM_ID}"{jumpbox_forums.SELECTED}><!-- BEGIN level -->&nbsp; &nbsp;<!-- END level -->{jumpbox_forums.FORUM_NAME}</option>
+					<!-- END jumpbox_forums -->
+					</select>
+					<input class="btn" type="submit" value="{L_GO}" />
+				</div>
+			</div>
 		</fieldset>
 	</form>
 </div>
