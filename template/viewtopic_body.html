@@ -56,35 +56,36 @@
 	<form method="post" action="{S_POLL_ACTION}">
 
 	<div class="row-fluid panel">
-		<div class="well">
+		<div class="well clearfix">
 
 		<div class="content">
-			<h5>{POLL_QUESTION}</h5>
-			<div style="display: table;margin: 0 auto;">
+			<h4><i class="icon-question-sign"></i> {POLL_QUESTION}</h4>
+			<div class="span8 offset2" style="text-align: center;">
 				<span class="badge badge-info" style="margin-right: 10px;"><i class="icon-time"></i> {L_POLL_LENGTH}<!-- IF S_CAN_VOTE and L_POLL_LENGTH --></span><span class="badge badge-important"  style="margin-left: 10px;"><i class="icon-check"></i> <!-- ENDIF --><!-- IF S_CAN_VOTE -->{L_MAX_VOTES}<!-- ENDIF --></span></div>
 
-			<fieldset class="polls">
+			<fieldset class="polls span8 offset2">
 			<!-- BEGIN poll_option -->
-				<dl class="<!-- IF poll_option.POLL_OPTION_VOTED -->voted<!-- ENDIF -->"<!-- IF poll_option.POLL_OPTION_VOTED --> title="{L_POLL_VOTED_OPTION}"<!-- ENDIF -->>
-					<dt><!-- IF S_CAN_VOTE --><label for="vote_{poll_option.POLL_OPTION_ID}">{poll_option.POLL_OPTION_CAPTION}</label><!-- ELSE -->{poll_option.POLL_OPTION_CAPTION}<!-- ENDIF --></dt>
-					<!-- IF S_CAN_VOTE --><dd style="width: auto;"><!-- IF S_IS_MULTI_CHOICE --><input type="checkbox" name="vote_id[]" id="vote_{poll_option.POLL_OPTION_ID}" value="{poll_option.POLL_OPTION_ID}"<!-- IF poll_option.POLL_OPTION_VOTED --> checked="checked"<!-- ENDIF --> /><!-- ELSE --><input type="radio" name="vote_id[]" id="vote_{poll_option.POLL_OPTION_ID}" value="{poll_option.POLL_OPTION_ID}"<!-- IF poll_option.POLL_OPTION_VOTED --> checked="checked"<!-- ENDIF --> /><!-- ENDIF --></dd><!-- ENDIF -->
-					<!-- IF S_DISPLAY_RESULTS --><dd class="resultbar"><div class="progress <!-- IF poll_option.POLL_OPTION_PCT < 20 -->progress-danger<!-- ELSEIF poll_option.POLL_OPTION_PCT < 40 -->progress-striped progress-warning<!-- ELSEIF poll_option.POLL_OPTION_PCT < 60 -->progress-striped progress-warning<!-- ELSEIF poll_option.POLL_OPTION_PCT < 80 -->progress-striped progress-warning<!-- ELSE -->progress-success<!-- ENDIF -->"><div class="bar" style="width:{poll_option.POLL_OPTION_PERCENT};">{poll_option.POLL_OPTION_RESULT}</div></div></dd>
-					<dd><!-- IF poll_option.POLL_OPTION_RESULT == 0 -->{L_NO_VOTES}<!-- ELSE -->{poll_option.POLL_OPTION_PERCENT}<!-- ENDIF --></dd><!-- ENDIF -->
-				</dl>
+				<div class="<!-- IF poll_option.POLL_OPTION_VOTED -->voted<!-- ENDIF -->"<!-- IF poll_option.POLL_OPTION_VOTED --> title="{L_POLL_VOTED_OPTION}"<!-- ENDIF -->>
+				<!-- IF S_DISPLAY_RESULTS --><div class="resultbar">
+				<!-- IF S_CAN_VOTE --><dd style="width: auto;"><!-- IF S_IS_MULTI_CHOICE --><input type="checkbox" name="vote_id[]" id="vote_{poll_option.POLL_OPTION_ID}" value="{poll_option.POLL_OPTION_ID}"<!-- IF poll_option.POLL_OPTION_VOTED --> checked="checked"<!-- ENDIF --> /><!-- ELSE --><input type="radio" name="vote_id[]" id="vote_{poll_option.POLL_OPTION_ID}" value="{poll_option.POLL_OPTION_ID}"<!-- IF poll_option.POLL_OPTION_VOTED --> checked="checked"<!-- ENDIF --> /><!-- ENDIF --></dd>
+				<!-- ENDIF -->
+				<span class="pull-right"><!-- IF poll_option.POLL_OPTION_RESULT == 0 -->{L_NO_VOTES}<!-- ELSE -->{poll_option.POLL_OPTION_PERCENT}<!-- ENDIF --></span>
+				<div><!-- IF S_CAN_VOTE --><h5 for="vote_{poll_option.POLL_OPTION_ID}">{poll_option.POLL_OPTION_CAPTION}</h5><!-- ELSE -->{poll_option.POLL_OPTION_CAPTION}<!-- ENDIF --></div>
+				<div class="progress <!-- IF poll_option.POLL_OPTION_PCT < 20 -->progress-danger<!-- ELSEIF poll_option.POLL_OPTION_PCT < 40 -->progress-striped progress-warning<!-- ELSEIF poll_option.POLL_OPTION_PCT < 60 -->progress-striped progress-warning<!-- ELSEIF poll_option.POLL_OPTION_PCT < 80 -->progress-striped progress-warning<!-- ELSE -->progress-success<!-- ENDIF -->"><div class="bar" style="min-width:15px;width:{poll_option.POLL_OPTION_PERCENT};">{poll_option.POLL_OPTION_RESULT}</div></div>
+				</div><!-- ENDIF -->
+				</div>
 			<!-- END poll_option -->
 
 			<!-- IF S_DISPLAY_RESULTS -->
-				<dl>
-					<dt>&nbsp;</dt>
-					<dd class="resultbar">{L_TOTAL_VOTES} : {TOTAL_VOTES}</dd>
-				</dl>
+				<div class="pull-right">
+					<div >{L_TOTAL_VOTES} : {TOTAL_VOTES}</div>
+				</div>
 			<!-- ENDIF -->
 
 			<!-- IF S_CAN_VOTE -->
-				<dl style="border-top: none;">
-					<dt>&nbsp;</dt>
-					<dd class="resultbar"><input type="submit" name="update" value="{L_SUBMIT_VOTE}" class="btn btn-success" /></dd>
-				</dl>
+				<div>
+					<div><input type="submit" name="update" value="{L_SUBMIT_VOTE}" class="btn btn-success" /></div>
+				</div>
 			<!-- ENDIF -->
 
 			<!-- IF not S_DISPLAY_RESULTS -->
@@ -142,7 +143,7 @@
 				<dd>
 					<ul class="profile-icons">
 						<!-- IF postrow.U_PM --><li class="pm"><a class="btn btn-mini" href="{postrow.U_PM}" title="{L_PRIVATE_MESSAGE}"><i class="icon-comment"></i></a></li><!-- ENDIF -->
-						<!-- IF postrow.U_EMAIL --><li class="email"><a class="btn btn-mini" href="{postrow.U_EMAIL}" title="{L_SEND_EMAIL_USER} {postrow.POST_AUTHOR}"><i class="icon-envelope"></i></a></li><!-- ENDIF -->
+                            <!-- IF postrow.U_EMAIL --><li class="email"><a class="btn btn-mini" href="{postrow.U_EMAIL}" title="{L_SEND_EMAIL_USER} {postrow.POST_AUTHOR}"><i class="icon-envelope"></i></a></li><!-- ENDIF -->
 						<!-- IF postrow.U_WWW --><li class="web"><a class="btn btn-mini" href="{postrow.U_WWW}" title="{L_VISIT_WEBSITE}: {postrow.U_WWW}"><i class="icon-globe"></i></a></li><!-- ENDIF -->
 					</ul>
 					<!-- IF postrow.U_MSN or postrow.U_ICQ or postrow.U_AIM or postrow.U_JABBER -->

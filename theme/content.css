@@ -569,12 +569,9 @@ dl.thumbnail dt a:hover img {
 
 /* Post poll styles
 ----------------------------------------*/
-fieldset.polls {
-}
 
 fieldset.polls dl {
 	margin-top: 5px;
-	border-top: 1px solid #e2e2e2;
 	padding: 5px 0 0 0;
 	line-height: 120%;
 	color: #666666;
