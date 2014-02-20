@@ -113,7 +113,7 @@
 		<div class="well <!-- IF postrow.S_UNREAD_POST --> alert-info<!-- ENDIF --><!-- IF postrow.S_POST_REPORTED --> alert-danger<!-- ENDIF -->">
 
 		<!-- IF not postrow.S_IGNORE_POST -->
-		<dl class="postprofile span3" id="profile{postrow.POST_ID}">
+		<dl class="postprofile span2" id="profile{postrow.POST_ID}">
 				<dt>
 
 					<!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR_FULL}</strong> <span class="label <!-- IF postrow.S_ONLINE and not postrow.S_IGNORE_POST --> label-success<!-- ELSE --> label-danger<!-- ENDIF -->"><!-- IF postrow.S_ONLINE and not postrow.S_IGNORE_POST --> online<!-- ELSE --> offline<!-- ENDIF --></span><!-- ELSE -->{postrow.POST_AUTHOR_FULL} <span class="label <!-- IF postrow.S_ONLINE and not postrow.S_IGNORE_POST --> label-success<!-- ELSE --> label-danger<!-- ENDIF -->"><!-- IF postrow.S_ONLINE and not postrow.S_IGNORE_POST --> online<!-- ELSE --> offline<!-- ENDIF --></span><!-- ENDIF -->
@@ -167,7 +167,7 @@
 
 			</dl>
 
-		<div class="postbody span9">
+		<div class="postbody span10">
 			<!-- IF postrow.S_IGNORE_POST -->
 				<div class="ignore">{postrow.L_IGNORE_POST}</div>
 			<!-- ELSE -->
