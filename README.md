@@ -11,6 +11,6 @@ phpBB3 theme based on [Bootstrap](http://twitter.github.com/bootstrap/) framewor
 
 **phpBB version:** phpBB 3.0.12
 
-**Demo:** [http://pbv2.leden4ik.name](http://pbv2.leden4ik.name)
+**Demo:** [https://pbv2.luckyman.name/](https://pbv2.luckyman.name/)
 
 **Download:** [https://github.com/Leden4ik/proBoot/](https://github.com/Leden4ik/proBoot/archive/master.zip)
